@@ -1,0 +1,6 @@
+.byebug*
+Gemfile.lock
+doc
+.DS_Store
+.tags*
+.yardoc
