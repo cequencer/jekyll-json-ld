@@ -7,11 +7,10 @@ Gem::Specification.new do |s|
   s.author                = "Matthias Winkelmann"
   s.email                 = "matthias.winkelmann@gmail.com"
   s.files                 = Dir.glob("lib/**/*.rb")
-  s.homepage              = "https://matthi.coffee/jekyll-json-ld"
+  s.homepage              = "https://github.com/MatthiasWinkelmann/jekyll-json-ld"
   s.license               = "MIT"
   s.require_paths         = %w(lib)
   s.platform              = Gem::Platform::RUBY
-  s.has_rdoc              = false
   s.metadata = { "issue_tracker" => "https://github.com/MatthiasWinkelmann/jekyll-json-ld/issues" }
   s.required_ruby_version = ">= 2.0.0"
   s.add_runtime_dependency "jekyll", ["~> 3.0"]
