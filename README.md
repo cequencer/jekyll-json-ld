@@ -1,6 +1,6 @@
 # Jekyll-JSON-LD: JSON-LD Liquid Tags in Jekyll
 
-An as-of-now very simple liquid tag that allows you to specify an object in the [Front Matter](http://jekyllrb.com/docs/frontmatter/) YAML and render it into JSON-LD within your output.
+An as-of-now very simple liquid filter that allows you to specify an object in the [Front Matter](http://jekyllrb.com/docs/frontmatter/) YAML and render it into JSON-LD within your output.
 
 ## WARNING
 
@@ -8,7 +8,7 @@ This is currently an extremely limited implementation that does little more than
 
 ## Example
 
-The object(s) are specified in the Front Matter of a template, page or post:
+The object(s) can, for example, be specified in the Front Matter of a template, page or post:
 ```
 ---
 layout: default
@@ -25,7 +25,7 @@ recipe:
 ```
 ...and so on. For references regarding defined schemes see [https://developers.google.com/structured-data/](https://developers.google.com/structured-data/) or [Schema.org](http://schema.org/docs/schemas.html)-
 
-Place the tag ´{% json_ld receipt %}` within the body of your document to render the following JSON-LD markup:
+To run the YAML through the filter place (for this example) ´{{ page.recipe | json_ld_filter %}}` within the body of your document. This renders the following JSON-LD markup:
 
 ```
 <script type="application/ld+json">

@@ -1,6 +1,7 @@
 .byebug*
 Gemfile.lock
 doc
+*.gem
 .DS_Store
 .tags*
 .yardoc

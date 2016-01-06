@@ -2,11 +2,11 @@ require "minitest/autorun"
 require "jekyll/json/ld"
 require "safe_yaml/load"
 
-# An exhaustive test of the json_ld tag
-class JSONLDTagTest < Minitest::Test
+# An exhaustive test of the json_ld filter
+class JSONLDFilterTest < Minitest::Test
 
   def test_yaml_to_json_ld
-    source = "{% json_ld recipe %}"
+    source = "{{ recipe | json_ld_filter }}"
     data = SafeYAML.load_file("./test/fixtures/2015-12-24-Apple-Pie.html")
     @template = Liquid::Template.parse(source, error_mode:  :strict)
 
